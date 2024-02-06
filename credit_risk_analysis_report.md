@@ -1,12 +1,16 @@
-# Credit-risk-classification 
-In this challenge, historical lending data was utilized for training and testing to assess a model's performance in predicting loan risk. To evaluate the model, both the original data and resampled training data were employed.
+# Overview of the Analysis 
+* Credit risk is important because it directly impacts the financial health of institutions. Thus, effective management of credit risk is essential for sustainable lending practices and overall financial well-being.
 
-
-# Libraries and Dependencies Used
-* numpy, pandas and pathlib and scikit-learn
+* In this challenge, historical lending data was utilized for training and testing to assess a model's performance in predicting loan risk. To evaluate the model, both the original data and resampled training data were employed.
 
 
 # Comparison of Results between Original and Resampled Data
+< Logistic Regression Model fitted with Original (Imbalanced) Data >
+![lrm_predictions_original_data](Images/lrm_predictions_original_data.png)
+
+< Logistic Regression Model fitted with Resampled (oversampled) Data >
+![lrc_prediections_resampled_data](Images/lrc_prediections_resampled_data.png)
+
 * Accuracy score: The score increased from 95% to 99% when the resampled data was used.
 * Precision score: For healthy loans (0), there was no change in the score, while for high-risk loans (1), there was a marginal 0.01% decrease. 
 * Recall score: The recall score for high-risk loans (1) saw a significant improvement, whereas the recall score for healthy loans (0) remained unchanged with the resampled data model.
